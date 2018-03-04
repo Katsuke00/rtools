@@ -13,7 +13,7 @@ static int
 numlen(ssize_t num) {
 	ssize_t res;
 
-	for (res = !num; num; res++)
+	for (res = 0; num; res++)
 		num /= 10;
 
 	return res;
